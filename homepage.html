@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Learning iFrames</title>
+    <title>YouTube</title>
     <link rel="stylesheet" href="styles.css" />
     <style>
       .iframe-container {
@@ -39,7 +39,7 @@
         font-size: 24px;
       "
     >
-      Welcome to iFrame Examples
+      YouTube
     </h1>
 
     <div class="iframe-container">
@@ -90,5 +90,17 @@
         Like
         </button>
       </div>
+      <script>
+          let likesCounter = 0;
+          // a function that increments the number of likes
+
+          const addLike = (incrementBy) => {
+            likesCounter += incrementBy;
+          }
+
+          addLike(10);
+
+          console.log(likesCounter);
+      </script>
   </body>
 </html>
