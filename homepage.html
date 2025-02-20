@@ -77,6 +77,7 @@
       ></iframe>
       <div style="margin : 20px;">
         <button
+        id="likeButton"
         style="
           padding-right: 16px;
           padding-left: 16px;
@@ -96,11 +97,12 @@
 
           const addLike = (incrementBy) => {
             likesCounter += incrementBy;
-          }
+            console.log(likesCounter);
+          };
 
-          addLike(10);
-
-          console.log(likesCounter);
+          document.getElementById("likeButton").addEventListener('click', ()=> {
+              addLike(1)
+          });
       </script>
   </body>
 </html>
